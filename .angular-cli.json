@@ -9,7 +9,17 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "assets/favicon.gif"
+        "assets/favicon.gif",
+        {
+  "glob": "**/*",
+  "input": "../node_modules/datatables/media/images",
+  "output": "./assets/images/datatables/"
+},
+        {
+  "glob": "**/*",
+  "input": "../node_modules/datatables/media/css",
+  "output": "./assets/styles/datatables/"
+}
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -51,7 +61,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "class": {
       "spec": true
     },
