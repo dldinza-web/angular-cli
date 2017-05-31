@@ -52,6 +52,23 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "class": {
+      "spec": true
+    },
+    "component": {
+      "spec": true
+    },
+    "directive": {
+      "spec": true
+    },
+    "module": {
+      "spec": true
+    },
+    "pipe": {
+      "spec": true
+    },
+    "service": {
+      "spec": true
+    }
   }
 }
