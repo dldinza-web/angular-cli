@@ -26,12 +26,22 @@
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.css",
         "../node_modules/datatables/media/css/jquery.dataTables.css",
+        "../node_modules/icheck/skins/all.css",
+        "../node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css",
+        "./assets/toastmessage/src/main/resources/css/jquery.toastmessage.css",
         "styles.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
         "../node_modules/bootstrap/dist/js/bootstrap.js",
-        "../node_modules/datatables/media/js/jquery.dataTables.js"
+        "../node_modules/datatables/media/js/jquery.dataTables.js",
+        "../node_modules/icheck/icheck.js",
+        "../node_modules/moment/min/moment.min.js",
+        "../node_modules/moment/min/locales.min.js",
+        "../node_modules/gasparesganga-jquery-loading-overlay/src/loadingoverlay.js",
+        "../node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js",
+        "../node_modules/deepmerge/index.js",
+        "./assets/toastmessage/src/main/javascript/jquery.toastmessage.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
