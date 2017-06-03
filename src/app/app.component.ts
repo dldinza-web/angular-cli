@@ -1,5 +1,4 @@
 import { Component, AfterViewInit } from '@angular/core';
-declare var $:any;
 declare var moment:any;
 declare var deepmerge:any;
 
