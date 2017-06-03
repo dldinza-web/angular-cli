@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables';
 
 body {
-  background: #ccc;
+  background-color: $bg_color;
   margin: 1em;
 }

@@ -29,8 +29,13 @@
         "../node_modules/icheck/skins/all.css",
         "../node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css",
         "./assets/toastmessage/src/main/resources/css/jquery.toastmessage.css",
-        "styles.css"
+        "styles.scss"
       ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "style-paths"
+        ]
+      },
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
         "global_scripts.js",
