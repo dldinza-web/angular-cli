@@ -1,4 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
+
+import { environment } from '../environments/environment';
+
 declare var moment:any;
 declare var deepmerge:any;
 
@@ -10,6 +13,10 @@ declare var deepmerge:any;
 
 export class AppComponent implements AfterViewInit {
   title = 'MEJORVE!';
+
+  constructor() {
+    console.log(environment.api);
+  }
 
   ngAfterViewInit() {
     //loader

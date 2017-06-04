@@ -53,6 +53,7 @@
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
+        "uat": "environments/environment.uat.ts",
         "prod": "environments/environment.prod.ts"
       }
     }
