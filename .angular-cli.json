@@ -29,6 +29,7 @@
         "../node_modules/icheck/skins/all.css",
         "../node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css",
         "./assets/toastmessage/src/main/resources/css/jquery.toastmessage.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
         "styles.scss"
       ],
       "stylePreprocessorOptions": {
