@@ -9,7 +9,12 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "assets/favicon.gif",
+        {
+          "glob": "**/*",
+          "input": "../node_modules/datatables/media/images",
+          "output": "./assets/images/datatables/"
+        }
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,12 +24,36 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/datatables/media/css/jquery.dataTables.css",
+        "../node_modules/icheck/skins/all.css",
+        "../node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css",
+        "./assets/toastmessage/src/main/resources/css/jquery.toastmessage.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "styles.scss"
       ],
-      "scripts": [],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "style-paths"
+        ]
+      },
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "global_scripts.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../node_modules/datatables/media/js/jquery.dataTables.js",
+        "../node_modules/icheck/icheck.js",
+        "../node_modules/moment/min/moment.min.js",
+        "../node_modules/moment/min/locales.min.js",
+        "../node_modules/gasparesganga-jquery-loading-overlay/src/loadingoverlay.js",
+        "../node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js",
+        "../node_modules/deepmerge/index.js",
+        "./assets/toastmessage/src/main/javascript/jquery.toastmessage.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
+        "uat": "environments/environment.uat.ts",
         "prod": "environments/environment.prod.ts"
       }
     }
@@ -51,7 +80,24 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "class": {
+      "spec": true
+    },
+    "component": {
+      "spec": true
+    },
+    "directive": {
+      "spec": true
+    },
+    "module": {
+      "spec": true
+    },
+    "pipe": {
+      "spec": true
+    },
+    "service": {
+      "spec": true
+    }
   }
 }
